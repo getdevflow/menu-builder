@@ -8,7 +8,7 @@ A full navigation/menu builder for Devflow CMF.
 
 > __Requires PHP:__ 8.4+
 
-> __Stable Tag:__ 1.0.0
+> __Stable Tag:__ 1.0.2
 
 > __License:__ GPLv2-only
 
