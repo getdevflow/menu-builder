@@ -259,6 +259,5 @@ final class MenuBuilderPlugin extends Plugin
 
     public function onDeactivation(): void
     {
-        $this->migrateDown();
     }
 }
