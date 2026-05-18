@@ -337,7 +337,7 @@ final readonly class NavigationRepository
         return (int) $this->dfdb->getVar($this->dfdb->prepare($sql, $params)) > 0;
     }
 
-    private function nextPosition(string $menuId, ?string $parentId): int
+    private function nextPosition(string $menuId, ?string $parentId = null): int
     {
         $stmt = $this->dfdb
             ->getConnection()
