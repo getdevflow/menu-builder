@@ -44,7 +44,7 @@ final class MenuBuilderPlugin extends Plugin
             'id' => 'menu-builder',
             'slug' => 'MenuBuilder',
             'author' => 'Joshua Parker',
-            'version' => '1.0.0',
+            'version' => '1.0.2',
             'description' => 'Full featured navigation/menu builder plugin for Devflow CMF.',
             'basename' => plugin_basename(dirname(__FILE__)),
             'path' => plugin_dir_path(dirname(__FILE__)),
