@@ -1,0 +1,50 @@
+# Devflow Navigation Plugin
+
+A full navigation/menu builder for Devflow CMF.
+
+## Screenshot
+
+![screenshot.png](public/images/screenshot.png)
+
+## Features
+
+- Unlimited menus: header, footer, sidebar, mobile, etc.
+- Add by drag/drop, checkbox or Add button.
+- Rename menu items.
+- Change URL and CSS class.
+- Add url attributes
+- Open links in a new window.
+- Remove menu items.
+- Drag/drop nesting with jQuery UI Sortable.
+- Database-backed storage.
+- Renderer API for frontend templates.
+
+## Composer Installation
+
+1. Start a new shell session.
+2. Navigate to the root of your install, run the following command ```composer require getdevflow/menu-builder```.
+
+## Frontend usage
+
+```php
+use Plugin\MenuBuilder\Helper\NavMenu;
+
+echo NavMenu::render('header-menu', [
+    'bootstrap' => 3,
+    'menu_class' => 'nav navbar-nav',
+]);
+```
+
+Or inject `Plugin\MenuBuilder\Support\NavigationRenderer` and call:
+
+```php
+echo $navigationRenderer->render('header-menu');
+```
+
+## Notes
+
+The repository assumes these frontend URL conventions:
+
+- Pages: value from `{prefix}_page_translations.route`
+- Products: `/product/{product_slug}`
+- Content: `/{content_type?}/{content_slug}`

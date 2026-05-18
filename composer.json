@@ -1,0 +1,29 @@
+{
+  "name": "getdevflow/menu-builder",
+  "description": "Full featured navigation/menu builder plugin for Devflow CMF.",
+  "type": "devflow-plugin",
+  "keywords": ["menu","menubuilder","menu-builder","navigation","navigation-menu"],
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Joshua Parker",
+      "email": "joshua@joshuaparker.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.4",
+    "oomphinc/composer-installers-extender": "^2.0"
+  },
+  "extra": {
+    "installer-name": "MenuBuilder",
+    "installer-types": ["devflow-plugin"]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "oomphinc/composer-installers-extender": true
+    }
+  }
+}

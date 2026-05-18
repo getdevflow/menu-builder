@@ -1,0 +1,219 @@
+<?php
+
+use App\Application\Devflow;
+use App\Shared\Services\Registry;
+
+use function App\Shared\Helpers\admin_url;
+use function Qubus\Security\Helpers\esc_html;
+use function Qubus\Security\Helpers\esc_html__;
+
+$this->parent('framework::backend/layouts/admin-layout');
+$this->block('backend', function ($params) {
+Registry::getInstance()->{'set'}('screen_parent', 'plugins');
+Registry::getInstance()->{'set'}('screen_child', 'menu-builder');
+$r = Registry::getInstance()->get('menu-builder');
+$e = static fn (?string $v): string => esc_html((string) $v);
+?>
+
+<div class="content-wrapper df-nav-builder" data-menu-id="<?= $e($params['menu']?->id()); ?>">
+    <div class="box box-solid">
+        <div class="box-header with-border">
+            <i class="fa fa-bars"></i>
+            <h3 class="box-title"><?= esc_html__(string: 'Menu Builder', domain: $r['id']); ?></h3>
+            <div class="pull-right">
+                <button type="button" class="btn btn-success js-save-order"><i class="fa fa-save"></i> <?= esc_html__(string: 'Save Menu', domain: $r['id']); ?></button>
+                <button type="button" class="btn btn-primary js-create-menu"><i class="fa fa-plus"></i> <?= esc_html__(string: 'Create Menu', domain: $r['id']); ?></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+
+        <?= Devflow::$PHP->flash->display(); ?>
+
+        <div class="box box-default">
+            <div class="box-body">
+                <form method="get" action="<?= admin_url('plugin/menu-builder/'); ?>" class="form-inline">
+                    <label><?= esc_html__(string: 'Select a menu to edit:', domain: $r['id']); ?>&nbsp;</label>
+                    <select name="menu" class="form-control">
+                        <?php foreach ($params['menus'] as $m): ?>
+                            <option value="<?= $e($m['id']); ?>" <?= $params['selected'] === $m['id'] ? 'selected' : ''; ?>><?= $e($m['name']); ?> (<?= $e($m['slug']); ?>)</option>
+                        <?php endforeach; ?>
+                    </select>
+                    <button class="btn btn-default" type="submit"><?= esc_html__(string: 'Select', domain: $r['id']); ?></button>
+                    <?php if ($params['menu']): ?>
+                        <button type="button" class="btn btn-danger js-delete-menu pull-right"><i class="fa fa-trash"></i> <?= esc_html__(string: 'Delete Menu', domain: $r['id']); ?></button>
+                    <?php endif; ?>
+                </form>
+            </div>
+        </div>
+
+        <?php if (!$params['menu']): ?>
+            <div class="callout callout-info"><?= esc_html__(string: 'Create your first menu to begin adding navigation items.', domain: $r['id']); ?></div>
+        <?php else: ?>
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="df-heading"><?= esc_html__(string: 'Menu structure', domain: $r['id']); ?></h2>
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <div class="form-inline">
+                            <label><?= esc_html__(string: 'Menu Name', domain: $r['id']); ?>&nbsp;</label>
+                            <input type="text" class="form-control js-menu-name" value="<?= $e($params['menu']->name()); ?>">
+                            <button type="button" class="btn btn-default js-rename-menu"><?=esc_html__(string: 'Rename', domain: $r['id']); ?></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <p class="text-muted"><?= esc_html__(string: 'Drag items into the order you prefer. Nest items to create dropdowns.', domain: $r['id']); ?></p>
+                        <ol class="df-menu-list sortable-root">
+                            <?php $renderItems = function (array $items) use (&$renderItems, $e, $r): void { ?>
+                                <?php foreach ($items as $item): ?>
+                                    <li class="df-menu-item" data-id="<?= $e($item->id()); ?>">
+                                        <div class="df-menu-bar">
+                                            <span class="df-drag"><i class="fa fa-arrows"></i></span>
+                                            <strong class="df-item-label"><?= $e($item->label()); ?></strong>
+                                            <span class="text-muted pull-right"><?= $e($item->type()); ?> <i class="fa fa-caret-down js-toggle-item"></i></span>
+                                        </div>
+                                        <div class="df-item-settings" style="display:none">
+                                            <div class="form-group">
+                                                <label><?= esc_html__(string: 'Navigation Label', domain: $r['id']); ?></label>
+                                                <input type="text" class="form-control js-item-title" value="<?= $e($item->label()); ?>">
+                                                <p class="help-block"><?= esc_html__(string: 'Leave blank to use original title.', domain: $r['id']); ?></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label><?=esc_html__(string: 'URL', domain: $r['id']); ?></label>
+                                                <input type="text" class="form-control js-item-url" value="<?= $e($item->url()); ?>" readonly>
+                                                <p class="form-control-static">
+                                                    <a href="<?= $e($item->url()); ?>"><?= $e($item->url()); ?></a>
+                                                </p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label><?= esc_html__(string: 'CSS Class', domain: $r['id']); ?></label>
+                                                <input type="text" class="form-control js-item-class" value="<?= $e($item->cssClass()); ?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label><?=esc_html__(string: 'Attributes JSON', domain: $r['id']); ?></label>
+                                                <textarea class="form-control input-sm js-item-attribute"
+                                                          rows="3"
+                                                          placeholder='{"rel":"nofollow","aria-label":"Home"}'><?= $e($item->rawAttributes() === [] ? '' : json_encode($item->rawAttributes(), JSON_PRETTY_PRINT)); ?></textarea>
+                                                <p class="help-block"><?= esc_html__(string: 'Optional JSON attributes for the rendered link.', domain: $r['id']); ?></p>
+                                            </div>
+                                            <label><input type="checkbox" class="js-item-window" <?= $item->target() === '_blank' ? 'checked' : ''; ?>> <?=esc_html__(string: 'Open in new window', domain: $r['id']); ?></label>
+                                            <div class="df-item-actions">
+                                                <button type="button" class="btn btn-xs btn-primary js-update-item"><?=esc_html__(string: 'Save Item', domain: $r['id']); ?></button>
+                                                <button type="button" class="btn btn-xs btn-danger js-remove-item"><?=esc_html__(string: 'Remove', domain: $r['id']); ?></button>
+                                            </div>
+                                        </div>
+                                        <ol class="df-menu-list">
+                                            <?php $renderItems($item->children()); ?>
+                                        </ol>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php }; $renderItems($params['menu']->items()); ?>
+                        </ol>
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" class="btn btn-success js-save-order"><i class="fa fa-save"></i> <?=esc_html__(string: 'Save Menu', domain: $r['id']); ?></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h2 class="df-heading"><?=esc_html__(string: 'Add menu items', domain: $r['id']); ?></h2>
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <?php $i = 0; foreach ($params['available'] as $group => $items): ?>
+                            <li class="<?= $i++ === 0 ? 'active' : ''; ?>">
+                                <a href="#tab-<?= md5($group); ?>" data-toggle="tab">
+                                    <?= $e($group); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+
+                        <li>
+                            <a href="#tab-custom" data-toggle="tab"><?=esc_html__(string: 'Custom Links', domain: $r['id']); ?></a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <?php $i = 0; foreach ($params['available'] as $group => $items): ?>
+                            <?php $active = $i++ === 0; ?>
+                            <div class="tab-pane fade <?= $active ? 'in active' : ''; ?>" id="tab-<?= md5($group); ?>">
+                                <?php if ($items === []): ?>
+                                    <p class="text-muted"><?=esc_html__(string: 'No published items found.', domain: $r['id']); ?></p>
+                                <?php endif; ?>
+                                <?php foreach ($items as $item): ?>
+                                    <div class="checkbox df-source-item"
+                                         draggable="true"
+                                         data-type="<?= $e($item['type']); ?>"
+                                         data-object-id="<?= $e($item['id']); ?>"
+                                         data-object-type="<?= $e($item['object_type']); ?>"
+                                         data-label="<?= $e($item['label']); ?>"
+                                         data-url="<?= $e($item['url']); ?>">
+                                        <label>
+                                            <input type="checkbox" class="js-source-check">
+                                            <?= $e($item['label']); ?>
+                                        </label>
+                                        <button type="button" class="btn btn-xs btn-default pull-right js-add-source"><?=esc_html__(string: 'Add', domain: $r['id']); ?></button>
+                                    </div>
+                                <?php endforeach; ?>
+                                <button type="button" class="btn btn-primary js-add-checked"><?=esc_html__(string: 'Add Selected to Menu', domain: $r['id']); ?></button>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <div class="tab-pane fade" id="tab-custom">
+                            <div class="form-group">
+                                <label><?=esc_html__(string: 'URL', domain: $r['id']); ?></label>
+                                <input type="text" class="form-control js-custom-url" placeholder="https://example.com or /local-path">
+                            </div>
+                            <div class="form-group">
+                                <label><?=esc_html__(string: 'Link Text', domain: $r['id']); ?></label>
+                                <input type="text" class="form-control js-custom-label" placeholder="External Site">
+                            </div>
+                            <label><input type="checkbox" class="js-custom-window"> <?=esc_html__(string: 'Open in new window', domain: $r['id']); ?></label><br><br>
+                            <button type="button" class="btn btn-primary js-add-custom"><?=esc_html__(string: 'Add Custom Link', domain: $r['id']); ?></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+
+        <div class="modal fade" id="dfPromptModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title js-prompt-title"><?=esc_html__(string: 'Prompt', domain: $r['id']); ?></h4>
+                    </div>
+                    <div class="modal-body">
+                        <label class="js-prompt-label"><?=esc_html__(string: 'Value', domain: $r['id']); ?></label>
+                        <input type="text" class="form-control js-prompt-input">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><?=esc_html__(string: 'Cancel', domain: $r['id']); ?></button>
+                        <button type="button" class="btn btn-primary js-prompt-confirm"><?=esc_html__(string: 'OK', domain: $r['id']); ?></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dfConfirmModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title js-confirm-title"><?=esc_html__(string: 'Confirm', domain: $r['id']); ?></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="js-confirm-message"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><?=esc_html__(string: 'Cancel', domain: $r['id']); ?></button>
+                        <button type="button" class="btn btn-danger js-confirm-confirm"><?=esc_html__(string: 'Confirm', domain: $r['id']); ?></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<?php }); ?>

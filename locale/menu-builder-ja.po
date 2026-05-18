@@ -1,0 +1,173 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Menu Builder\n"
+"POT-Creation-Date: 2026-05-17 22:59-0600\n"
+"PO-Revision-Date: 2026-05-17 23:01-0600\n"
+"Last-Translator: \n"
+"Language-Team: Joshua Parker\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: menu-builder\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"t__;esc_html__;trans;trans_html;trans_attr;esc_attr__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Controller\n"
+"X-Poedit-SearchPath-1: Domain\n"
+"X-Poedit-SearchPath-2: Helper\n"
+"X-Poedit-SearchPath-3: Repository\n"
+"X-Poedit-SearchPath-4: Support\n"
+"X-Poedit-SearchPath-5: view\n"
+"X-Poedit-SearchPathExcluded-0: locale\n"
+"X-Poedit-SearchPathExcluded-1: public\n"
+
+#: view/index.phtml:22
+#, fuzzy
+msgid "Menu Builder"
+msgstr "メニュービルダー"
+
+#: view/index.phtml:24 view/index.phtml:115
+#, fuzzy
+msgid "Save Menu"
+msgstr "保存メニュー"
+
+#: view/index.phtml:25
+msgid "Create Menu"
+msgstr "メニューの作成"
+
+#: view/index.phtml:37
+#, fuzzy
+msgid "Select a menu to edit:"
+msgstr "編集するメニューを選択してください:"
+
+#: view/index.phtml:43
+msgid "Select"
+msgstr "選択"
+
+#: view/index.phtml:45
+#, fuzzy
+msgid "Delete Menu"
+msgstr "削除メニュー"
+
+#: view/index.phtml:52
+#, fuzzy
+msgid "Create your first menu to begin adding navigation items."
+msgstr ""
+"ナビゲーションアイテムの追加を始めるために最初のメニューを作成しましょう。"
+
+#: view/index.phtml:56
+#, fuzzy
+msgid "Menu structure"
+msgstr "メニュー構成"
+
+#: view/index.phtml:60
+msgid "Menu Name"
+msgstr "メニュー名"
+
+#: view/index.phtml:62
+msgid "Rename"
+msgstr "名前の変更"
+
+#: view/index.phtml:66
+#, fuzzy
+msgid "Drag items into the order you prefer. Nest items to create dropdowns."
+msgstr ""
+"アイテムを好きな順番にドラッグしてください。アイテムをネストしてドロップダ"
+"ウンを作る。"
+
+#: view/index.phtml:78
+msgid "Navigation Label"
+msgstr "ナビゲーションラベル"
+
+#: view/index.phtml:80
+#, fuzzy
+msgid "Leave blank to use original title."
+msgstr "元のタイトルを使う場合は空欄を残してください。"
+
+#: view/index.phtml:83 view/index.phtml:165
+msgid "URL"
+msgstr "URL"
+
+#: view/index.phtml:90
+msgid "CSS Class"
+msgstr "CSS クラス"
+
+#: view/index.phtml:94
+#, fuzzy
+msgid "Attributes JSON"
+msgstr "属性 JSON"
+
+#: view/index.phtml:98
+#, fuzzy
+msgid "Optional JSON attributes for the rendered link."
+msgstr "レンダリングリンク用のオプションJSON属性。"
+
+#: view/index.phtml:100 view/index.phtml:172
+msgid "Open in new window"
+msgstr "新しいウィンドウで開く"
+
+#: view/index.phtml:102
+#, fuzzy
+msgid "Save Item"
+msgstr "セーブアイテム"
+
+#: view/index.phtml:103
+msgid "Remove"
+msgstr "削除"
+
+#: view/index.phtml:121
+#, fuzzy
+msgid "Add menu items"
+msgstr "メニュー項目の追加"
+
+#: view/index.phtml:133
+msgid "Custom Links"
+msgstr "カスタムリンク"
+
+#: view/index.phtml:142
+#, fuzzy
+msgid "No published items found."
+msgstr "公開された資料は見つかりませんでした。"
+
+#: view/index.phtml:156
+msgid "Add"
+msgstr "追加"
+
+#: view/index.phtml:159
+#, fuzzy
+msgid "Add Selected to Menu"
+msgstr "メニューに選択を追加"
+
+#: view/index.phtml:169
+msgid "Link Text"
+msgstr "リンクテキスト"
+
+#: view/index.phtml:173
+#, fuzzy
+msgid "Add Custom Link"
+msgstr "カスタムリンクの追加"
+
+#: view/index.phtml:186
+msgid "Prompt"
+msgstr "プロンプト"
+
+#: view/index.phtml:189
+msgid "Value"
+msgstr "値"
+
+#: view/index.phtml:193 view/index.phtml:211
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: view/index.phtml:194
+msgid "OK"
+msgstr "OK"
+
+#: view/index.phtml:205 view/index.phtml:212
+msgid "Confirm"
+msgstr "確認する"

@@ -1,0 +1,168 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Menu Builder\n"
+"POT-Creation-Date: 2026-05-17 22:59-0600\n"
+"PO-Revision-Date: 2026-05-17 23:01-0600\n"
+"Last-Translator: \n"
+"Language-Team: Joshua Parker\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: menu-builder\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"t__;esc_html__;trans;trans_html;trans_attr;esc_attr__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Controller\n"
+"X-Poedit-SearchPath-1: Domain\n"
+"X-Poedit-SearchPath-2: Helper\n"
+"X-Poedit-SearchPath-3: Repository\n"
+"X-Poedit-SearchPath-4: Support\n"
+"X-Poedit-SearchPath-5: view\n"
+"X-Poedit-SearchPathExcluded-0: locale\n"
+"X-Poedit-SearchPathExcluded-1: public\n"
+
+#: view/index.phtml:22
+msgid "Menu Builder"
+msgstr "Gestione Menù"
+
+#: view/index.phtml:24 view/index.phtml:115
+msgid "Save Menu"
+msgstr "Salva Menu"
+
+#: view/index.phtml:25
+msgid "Create Menu"
+msgstr "Crea menu"
+
+#: view/index.phtml:37
+#, fuzzy
+msgid "Select a menu to edit:"
+msgstr "Seleziona un menu da modificare:"
+
+#: view/index.phtml:43
+msgid "Select"
+msgstr "Seleziona"
+
+#: view/index.phtml:45
+msgid "Delete Menu"
+msgstr "Elimina il menu"
+
+#: view/index.phtml:52
+#, fuzzy
+msgid "Create your first menu to begin adding navigation items."
+msgstr ""
+"Crea il tuo primo menu per iniziare ad aggiungere elementi di navigazione."
+
+#: view/index.phtml:56
+#, fuzzy
+msgid "Menu structure"
+msgstr "Struttura del menù"
+
+#: view/index.phtml:60
+msgid "Menu Name"
+msgstr "Nome menu"
+
+#: view/index.phtml:62
+msgid "Rename"
+msgstr "Rinomina"
+
+#: view/index.phtml:66
+#, fuzzy
+msgid "Drag items into the order you prefer. Nest items to create dropdowns."
+msgstr ""
+"Trascina gli elementi nell'ordine che preferisci. Nida gli oggetti per "
+"creare i menu a tendina."
+
+#: view/index.phtml:78
+msgid "Navigation Label"
+msgstr "Etichetta di Navigazione"
+
+#: view/index.phtml:80
+#, fuzzy
+msgid "Leave blank to use original title."
+msgstr "Lascia vuoto per usare il titolo originale."
+
+#: view/index.phtml:83 view/index.phtml:165
+msgid "URL"
+msgstr "URL"
+
+#: view/index.phtml:90
+msgid "CSS Class"
+msgstr "Classe CSS"
+
+#: view/index.phtml:94
+#, fuzzy
+msgid "Attributes JSON"
+msgstr "Attributi JSON"
+
+#: view/index.phtml:98
+#, fuzzy
+msgid "Optional JSON attributes for the rendered link."
+msgstr "Attributi JSON opzionali per il link renderizzato."
+
+#: view/index.phtml:100 view/index.phtml:172
+msgid "Open in new window"
+msgstr "Apri in una nuova finestra"
+
+#: view/index.phtml:102
+msgid "Save Item"
+msgstr "Salva l'articolo"
+
+#: view/index.phtml:103
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: view/index.phtml:121
+#, fuzzy
+msgid "Add menu items"
+msgstr "Aggiungi piatti nel menù"
+
+#: view/index.phtml:133
+msgid "Custom Links"
+msgstr "Collegamenti personalizzati"
+
+#: view/index.phtml:142
+#, fuzzy
+msgid "No published items found."
+msgstr "Nessun articolo pubblicato trovato."
+
+#: view/index.phtml:156
+msgid "Add"
+msgstr "Aggiungi"
+
+#: view/index.phtml:159
+#, fuzzy
+msgid "Add Selected to Menu"
+msgstr "Aggiungi Selezionato al menu"
+
+#: view/index.phtml:169
+msgid "Link Text"
+msgstr "Testo del link"
+
+#: view/index.phtml:173
+msgid "Add Custom Link"
+msgstr "Aggiungi Link Personalizzato"
+
+#: view/index.phtml:186
+msgid "Prompt"
+msgstr "Richiesta"
+
+#: view/index.phtml:189
+msgid "Value"
+msgstr "Valore"
+
+#: view/index.phtml:193 view/index.phtml:211
+msgid "Cancel"
+msgstr "Annulla"
+
+#: view/index.phtml:194
+msgid "OK"
+msgstr "OK"
+
+#: view/index.phtml:205 view/index.phtml:212
+msgid "Confirm"
+msgstr "Conferma"

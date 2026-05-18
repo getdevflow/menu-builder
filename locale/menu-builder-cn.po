@@ -1,0 +1,1730 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Menu Builder\n"
+"POT-Creation-Date: 2026-05-17 22:58-0600\n"
+"PO-Revision-Date: 2026-05-17 22:58-0600\n"
+"Last-Translator: \n"
+"Language-Team: Joshua Parker\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: menu-builder\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"t__;esc_html__;trans;trans_html;trans_attr;esc_attr__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Controller\n"
+"X-Poedit-SearchPath-1: Domain\n"
+"X-Poedit-SearchPath-2: Helper\n"
+"X-Poedit-SearchPath-3: Repository\n"
+"X-Poedit-SearchPath-4: Support\n"
+"X-Poedit-SearchPath-5: view\n"
+"X-Poedit-SearchPathExcluded-0: locale\n"
+"X-Poedit-SearchPathExcluded-1: public\n"
+
+#: view/index.phtml:22
+#, fuzzy
+#| msgid "Page Builder"
+msgid "Menu Builder"
+msgstr "页面生成器"
+
+#: view/index.phtml:24 view/index.phtml:115
+#, fuzzy
+#| msgid "Save"
+msgid "Save Menu"
+msgstr "保存"
+
+#: view/index.phtml:25
+#, fuzzy
+#| msgid "Create User"
+msgid "Create Menu"
+msgstr "创建登录账号"
+
+#: view/index.phtml:37
+msgid "Select a menu to edit:"
+msgstr ""
+
+#: view/index.phtml:43
+msgid "Select"
+msgstr ""
+
+#: view/index.phtml:45
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Menu"
+msgstr "删除"
+
+#: view/index.phtml:52
+msgid "Create your first menu to begin adding navigation items."
+msgstr ""
+
+#: view/index.phtml:56
+msgid "Menu structure"
+msgstr ""
+
+#: view/index.phtml:60
+#, fuzzy
+#| msgid "Middle Name"
+msgid "Menu Name"
+msgstr "中间名"
+
+#: view/index.phtml:62
+#, fuzzy
+#| msgid "Username"
+msgid "Rename"
+msgstr "用户名"
+
+#: view/index.phtml:66
+msgid "Drag items into the order you prefer. Nest items to create dropdowns."
+msgstr ""
+
+#: view/index.phtml:78
+msgid "Navigation Label"
+msgstr ""
+
+#: view/index.phtml:80
+msgid "Leave blank to use original title."
+msgstr ""
+
+#: view/index.phtml:83 view/index.phtml:165
+msgid "URL"
+msgstr "网址"
+
+#: view/index.phtml:90
+msgid "CSS Class"
+msgstr ""
+
+#: view/index.phtml:94
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes JSON"
+msgstr "属性"
+
+#: view/index.phtml:98
+msgid "Optional JSON attributes for the rendered link."
+msgstr ""
+
+#: view/index.phtml:100 view/index.phtml:172
+msgid "Open in new window"
+msgstr ""
+
+#: view/index.phtml:102
+#, fuzzy
+#| msgid "Save"
+msgid "Save Item"
+msgstr "保存"
+
+#: view/index.phtml:103
+msgid "Remove"
+msgstr ""
+
+#: view/index.phtml:121
+#, fuzzy
+#| msgid "Add New Site"
+msgid "Add menu items"
+msgstr "添加新网站"
+
+#: view/index.phtml:133
+#, fuzzy
+#| msgid "Button Link"
+msgid "Custom Links"
+msgstr "按钮链接"
+
+#: view/index.phtml:142
+msgid "No published items found."
+msgstr ""
+
+#: view/index.phtml:156
+#, fuzzy
+#| msgid "Add New"
+msgid "Add"
+msgstr "新增"
+
+#: view/index.phtml:159
+msgid "Add Selected to Menu"
+msgstr ""
+
+#: view/index.phtml:169
+#, fuzzy
+#| msgid "Text"
+msgid "Link Text"
+msgstr "文本"
+
+#: view/index.phtml:173
+#, fuzzy
+#| msgid "Button Link"
+msgid "Add Custom Link"
+msgstr "按钮链接"
+
+#: view/index.phtml:186
+msgid "Prompt"
+msgstr ""
+
+#: view/index.phtml:189
+msgid "Value"
+msgstr ""
+
+#: view/index.phtml:193 view/index.phtml:211
+msgid "Cancel"
+msgstr "取消"
+
+#: view/index.phtml:194
+msgid "OK"
+msgstr ""
+
+#: view/index.phtml:205 view/index.phtml:212
+msgid "Confirm"
+msgstr "确认"
+
+#~ msgid "Unauthorized."
+#~ msgstr "未经授权的。"
+
+#, fuzzy
+#~ msgid "Content title cannot be empty."
+#~ msgstr "内容标题不能空。"
+
+#, fuzzy
+#~ msgid "Content slug cannot be empty."
+#~ msgstr "内容栏不能是空的。"
+
+#, fuzzy
+#~ msgid "Content author cannot be empty."
+#~ msgstr "内容作者不能空着。"
+
+#, fuzzy
+#~ msgid "Content type cannot be empty."
+#~ msgstr "内容类型不能为空。"
+
+#, fuzzy
+#~ msgid "Content sidebar must be an absolute integer."
+#~ msgstr "内容侧边栏必须是绝对整数。"
+
+#, fuzzy
+#~ msgid "Show in menu must be an absolute integer."
+#~ msgstr "菜单中的显示必须是绝对整数。"
+
+#, fuzzy
+#~ msgid "Show in search must be an absolute integer."
+#~ msgstr "搜索中的显示必须是绝对整数。"
+
+#, fuzzy
+#~ msgid "Content status cannot be empty."
+#~ msgstr "内容状态不能为空。"
+
+#, fuzzy
+#~ msgid "Content published cannot be empty."
+#~ msgstr "发布的内容不能是空的。"
+
+#, fuzzy
+#~ msgid "Content published gmt cannot be empty."
+#~ msgstr "发布的内容不能是空的。"
+
+#, fuzzy
+#~ msgid "Content id cannot be null."
+#~ msgstr "内容ID不能为空。"
+
+#~ msgid "Published"
+#~ msgstr "已发布"
+
+#~ msgid "Scheduled"
+#~ msgstr "计划"
+
+#~ msgid "Draft"
+#~ msgstr "草稿"
+
+#~ msgid "Pending"
+#~ msgstr "待定"
+
+#~ msgid "Archived"
+#~ msgstr "已存档"
+
+#, fuzzy
+#~ msgid "Content Type Title cannot be null."
+#~ msgstr "内容类型标题不能为空。"
+
+#, fuzzy
+#~ msgid "Content Type Slug cannot be null."
+#~ msgstr "内容类型 Slug 不能是空的。"
+
+#, fuzzy
+#~ msgid "Content Type Description cannot be null."
+#~ msgstr "内容类型描述不能为空。"
+
+#, fuzzy
+#~ msgid "Content Type ID cannot be null."
+#~ msgstr "内容类型ID不能为空。"
+
+#, fuzzy
+#~ msgid "Product title cannot be empty."
+#~ msgstr "产品标题不能空着。"
+
+#, fuzzy
+#~ msgid "Product slug cannot be empty."
+#~ msgstr "产品注头不能空。"
+
+#, fuzzy
+#~ msgid "Product body cannot be empty."
+#~ msgstr "产品体不能是空的。"
+
+#, fuzzy
+#~ msgid "Product author cannot be empty."
+#~ msgstr "产品作者不能是空的。"
+
+#, fuzzy
+#~ msgid "Product sku cannot be empty."
+#~ msgstr "产品SKU不能是空的。"
+
+#, fuzzy
+#~ msgid "Product show in menu must be an absolute value."
+#~ msgstr "菜单中的产品显示必须是绝对值。"
+
+#, fuzzy
+#~ msgid "Product show in search must be an absolute value."
+#~ msgstr "搜索中的产品展示必须是绝对值。"
+
+#, fuzzy
+#~ msgid "Product status cannot be empty."
+#~ msgstr "产品状态不能是空的。"
+
+#, fuzzy
+#~ msgid "Product published date cannot be empty."
+#~ msgstr "产品发布日期不能为空。"
+
+#, fuzzy
+#~ msgid "Product published gmt date cannot be empty."
+#~ msgstr "产品发布的GMT日期不能为空。"
+
+#, fuzzy
+#~ msgid "Product id cannot be null."
+#~ msgstr "产品ID不能为空。"
+
+#, fuzzy
+#~ msgid "Active"
+#~ msgstr "活跃"
+
+#~ msgid "Inactive"
+#~ msgstr "未激活"
+
+#~ msgid "Blocked"
+#~ msgstr "阻止"
+
+#~ msgid "Spammer"
+#~ msgstr "垃圾信息发送者"
+
+#~ msgid "Login"
+#~ msgstr "登录"
+
+#, fuzzy
+#~ msgid "You are already logged out."
+#~ msgstr "你已经登出了。"
+
+#, fuzzy
+#~ msgid "Request error."
+#~ msgstr "请求错误。"
+
+#~ msgid ""
+#~ "A new password was sent to your email. May take a few minutes to arrive, "
+#~ "so please be patient"
+#~ msgstr "新密码已发送到您的电子邮件。可能需要几分钟到达，所以请耐心等待"
+
+#, fuzzy
+#~ msgid "Password reset exception occurred and was logged."
+#~ msgstr "密码重置异常发生并被记录。"
+
+#~ msgid "Access denied."
+#~ msgstr "拒绝访问。"
+
+#, fuzzy, php-format
+#~ msgid "Create %s Content"
+#~ msgstr "创建%s内容"
+
+#, fuzzy
+#~ msgid "Content not found."
+#~ msgstr "内容未找到。"
+
+#, php-format
+#~ msgid "%s Content"
+#~ msgstr "%s 内容"
+
+#~ msgid "Content Types"
+#~ msgstr "内容类型"
+
+#, fuzzy
+#~ msgid "The content type does not exist."
+#~ msgstr "内容类型不存在。"
+
+#, fuzzy
+#~ msgid "System Snapshot"
+#~ msgstr "系统快照"
+
+#~ msgid "Cache flushed successfully."
+#~ msgstr "缓存成功刷新。"
+
+#~ msgid "Media Library"
+#~ msgstr "媒体库"
+
+#, fuzzy
+#~ msgid "elFinder"
+#~ msgstr "elFinder"
+
+#~ msgid "Access denied"
+#~ msgstr "拒绝访问"
+
+#, fuzzy
+#~ msgid "General options exception occurred and was logged."
+#~ msgstr "发生了通用选项异常并被记录。"
+
+#~ msgid "General Options"
+#~ msgstr "常规选项"
+
+#, fuzzy
+#~ msgid "Reading options exception occurred and was logged."
+#~ msgstr "读取选项异常出现并被记录。"
+
+#~ msgid "Reading Options"
+#~ msgstr "阅读选项"
+
+#~ msgid "Plugins"
+#~ msgstr "插件"
+
+#~ msgid "Plugin activated."
+#~ msgstr "插件已激活。"
+
+#, fuzzy
+#~ msgid "Plugin activation exception occurred and was logged."
+#~ msgstr "插件激活异常发生并被记录。"
+
+#~ msgid "Plugin deactivated."
+#~ msgstr "插件已停用。"
+
+#, fuzzy
+#~ msgid "Plugin deactivation exception occurred and was logged."
+#~ msgstr "插件停用异常发生并被记录。"
+
+#~ msgid "Products"
+#~ msgstr "产品"
+
+#~ msgid "Create Product"
+#~ msgstr "创建产品"
+
+#, fuzzy
+#~ msgid "The product does not exist."
+#~ msgstr "产品不存在。"
+
+#, fuzzy
+#~ msgid "Multisite is not enabled."
+#~ msgstr "未启用多站点。"
+
+#, fuzzy
+#~ msgid "Insertion error occurred."
+#~ msgstr "插入错误发生。"
+
+#, fuzzy
+#~ msgid "Insertion exception occurred and was logged."
+#~ msgstr "插入异常发生并被记录。"
+
+#~ msgid "Sites"
+#~ msgstr "站点"
+
+#, fuzzy
+#~ msgid "Exception occurred and was logged."
+#~ msgstr "异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "Content types error."
+#~ msgstr "内容类型错误。"
+
+#, fuzzy
+#~ msgid "Change error occurred."
+#~ msgstr "发生变更错误。"
+
+#, fuzzy
+#~ msgid "Change exception occurred and was logged."
+#~ msgstr "变更异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "The site does not exist."
+#~ msgstr "该网站不存在。"
+
+#, fuzzy
+#~ msgid "The action is not allowed."
+#~ msgstr "这种行为是不允许的。"
+
+#, fuzzy
+#~ msgid "Manage System Users"
+#~ msgstr "管理系统用户"
+
+#, fuzzy
+#~ msgid "You cannot submit an empty site id."
+#~ msgstr "你不能提交空的站点ID。"
+
+#, fuzzy
+#~ msgid "You cannot submit an empty user role."
+#~ msgstr "你不能提交空的用户角色。"
+
+#~ msgid "An error occurred."
+#~ msgstr "发生错误。"
+
+#, fuzzy
+#~ msgid "Delete exception occurred and was logged."
+#~ msgstr "删除异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "This action is not allowed."
+#~ msgstr "此举不被允许。"
+
+#, fuzzy
+#~ msgid "A site check exception occurred and was logged."
+#~ msgstr "发生了站点检查异常并被记录。"
+
+#, fuzzy
+#~ msgid "A site deletion exception occurred and was logged."
+#~ msgstr "发生了网站删除异常并被记录。"
+
+#~ msgid "Themes"
+#~ msgstr "主题"
+
+#, fuzzy
+#~ msgid "Theme activated."
+#~ msgstr "主题已激活。"
+
+#, fuzzy
+#~ msgid "Theme activation exception occurred and was logged."
+#~ msgstr "主题激活异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "Theme deactivated."
+#~ msgstr "主题已关闭。"
+
+#, fuzzy
+#~ msgid "Theme deactivation exception occurred and was logged."
+#~ msgstr "主题停用异常发生并被记录。"
+
+#, fuzzy, php-format
+#~ msgid "Passwords cannot be less than %s characters."
+#~ msgstr "密码不能小于%s字符。"
+
+#, fuzzy
+#~ msgid "Username cannot be empty or null."
+#~ msgstr "用户名不能空或空。"
+
+#, fuzzy
+#~ msgid "User check exception occurred and was logged."
+#~ msgstr "用户检查异常发生并被记录。"
+
+#~ msgid "Users"
+#~ msgstr "用户"
+
+#, fuzzy
+#~ msgid "Query exception occurred and was logged."
+#~ msgstr "查询异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "Users error"
+#~ msgstr "用户操作失误"
+
+#~ msgid "Permission denied."
+#~ msgstr "没有权限。"
+
+#, fuzzy
+#~ msgid "User change exception occurred and was logged."
+#~ msgstr "用户变更异常发生并被记录。"
+
+#~ msgid "View User"
+#~ msgstr "查看用户"
+
+#~ msgid "The user does not exist."
+#~ msgstr "用户不存在。"
+
+#, fuzzy
+#~ msgid "A removal exception occurred and was logged."
+#~ msgstr "发生了移除异常并被记录。"
+
+#~ msgid "User not found."
+#~ msgstr "用户未找到。"
+
+#, php-format
+#~ msgid "Password successfully updated for <strong>%s</strong>."
+#~ msgstr "密码已成功更新<strong>%s</strong>。"
+
+#, fuzzy
+#~ msgid "The password reset email has been queued for sending."
+#~ msgstr "密码重置邮件已被排队发送。"
+
+#, fuzzy
+#~ msgid "Reset password exception occurred and was logged."
+#~ msgstr "密码重置异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "An update error occurred."
+#~ msgstr "发生了更新错误。"
+
+#, fuzzy
+#~ msgid "An update exception occurred and was logged."
+#~ msgstr "发生了更新异常并被记录。"
+
+#~ msgid "User Profile"
+#~ msgstr "用户资料"
+
+#~ msgid "User switching was successful."
+#~ msgstr "用户切换成功。"
+
+#, fuzzy
+#~ msgid "User switching exception occurred and was logged."
+#~ msgstr "用户切换异常发生并被记录。"
+
+#, fuzzy
+#~ msgid "Cookie is not properly set for user switching."
+#~ msgstr "Cookie 用户切换设置不正确。"
+
+#, fuzzy
+#~ msgid "Switching back to previous user session was successful."
+#~ msgstr "切换回之前的用户会话成功了。"
+
+#, fuzzy
+#~ msgid "User switch back exception occurred and was logged."
+#~ msgstr "用户切换回天异常发生并被记录。"
+
+#~ msgid "Database table does not exist."
+#~ msgstr "数据库表不存在。"
+
+#~ msgid "No data."
+#~ msgstr "没有数据。"
+
+#, fuzzy
+#~ msgid "Resource deleted."
+#~ msgstr "资源已删除。"
+
+#~ msgid "Bad request."
+#~ msgstr "错误的请求。"
+
+#, fuzzy
+#~ msgid "User removed from site."
+#~ msgstr "用户已被移除。"
+
+#, fuzzy
+#~ msgid "Website Manager"
+#~ msgstr "网站管理员"
+
+#, fuzzy, php-format
+#~ msgid "Devflow %s"
+#~ msgstr "开发流程%s"
+
+#, fuzzy
+#~ msgid "The content does not exist."
+#~ msgstr "内容不存在。"
+
+#, fuzzy
+#~ msgid "Content added successfully."
+#~ msgstr "内容已成功添加。"
+
+#, fuzzy
+#~ msgid "Could not create content. Please try again later."
+#~ msgstr "无法创作内容。请稍后再试。"
+
+#, fuzzy
+#~ msgid "Removal of featured image was successful."
+#~ msgstr "重点图片的移除成功。"
+
+#, fuzzy
+#~ msgid "Removal exception occurred and was logged."
+#~ msgstr "发生了移除异常并被记录。"
+
+#, fuzzy
+#~ msgid "A deletion exception occurred and was logged."
+#~ msgstr "发生了删除异常并被记录。"
+
+#, fuzzy
+#~ msgid "Removal was successful."
+#~ msgstr "清除行动成功。"
+
+#, fuzzy
+#~ msgid "Error fetching content types."
+#~ msgstr "错误获取内容类型。"
+
+#, fuzzy
+#~ msgid "Product added successfully."
+#~ msgstr "产品成功添加。"
+
+#, fuzzy
+#~ msgid "Could not create product. Please try again later."
+#~ msgstr "无法创造产品。请稍后再试。"
+
+#, fuzzy, php-format
+#~ msgid "This is confirmation that your email on %s was updated."
+#~ msgstr "这是确认你%s邮箱已被更新。"
+
+#, fuzzy, php-format
+#~ msgid "<strong>Email:</strong> %s"
+#~ msgstr "<strong>电子邮件：</strong> %s"
+
+#, fuzzy, php-format
+#~ msgid ""
+#~ "If you did not initiate an email change/update, please contact us at <a "
+#~ "href=\"mailto:%s\">%s</a>."
+#~ msgstr ""
+#~ "如果您未发起邮件更改或更新，请联系我们。<a href=\"mailto:%s\">%s</a>"
+
+#, php-format
+#~ msgid "[%s] Notice of Email Change"
+#~ msgstr "[%s] 电子邮件地址修改通知"
+
+#~ msgid "Profile Update"
+#~ msgstr "个人资料更新"
+
+#, fuzzy
+#~ msgid "Email Change"
+#~ msgstr "邮件更改"
+
+#~ msgid "Sign in"
+#~ msgstr "登录"
+
+#, fuzzy, php-format
+#~ msgid "<strong>Username:</strong> %s"
+#~ msgstr "<strong>用户名：</strong> %s"
+
+#, fuzzy, php-format
+#~ msgid "<strong>Password:</strong> %s"
+#~ msgstr "<strong>密码：</strong> %s"
+
+#, fuzzy, php-format
+#~ msgid "[%s] New Account"
+#~ msgstr "[%s] 新账户"
+
+#~ msgid "Account"
+#~ msgstr "帐户"
+
+#~ msgid "New Account"
+#~ msgstr "新建帐户"
+
+#, fuzzy, php-format
+#~ msgid "Your newly generated password is: <strong>%s</strong>"
+#~ msgstr "你新生成的密码是： <strong>%s</strong>"
+
+#, php-format
+#~ msgid "[%s] Password Reset"
+#~ msgstr "[%s] 密码重置"
+
+#~ msgid "Password"
+#~ msgstr "密码"
+
+#~ msgid "New Password"
+#~ msgstr "新密码"
+
+#, fuzzy, php-format
+#~ msgid "No row found for site \"%s\" and user \"%s\"."
+#~ msgstr "未找到站点“%s”和用户“%s”的行。"
+
+#, fuzzy
+#~ msgid "User attribute not found"
+#~ msgstr "用户属性未找到"
+
+#, fuzzy
+#~ msgid "Attribute patch callback must return an AttributeBag instance."
+#~ msgstr "属性补丁回调必须返回一个 AttributeBag 实例。"
+
+#, fuzzy
+#~ msgid "Sorry, there was an error."
+#~ msgstr "抱歉，出现了错误。"
+
+#, fuzzy, php-format
+#~ msgid ""
+#~ "Login was successful. Welcome <strong>%s</strong> to the admin dashboard."
+#~ msgstr "登录成功了。欢迎 <strong>%s</strong> 来到管理员仪表盘。"
+
+#~ msgid "<strong>ERROR</strong>: The username/email field is empty."
+#~ msgstr "<strong>错误：</strong>用户名/电子邮件字段为空。"
+
+#~ msgid "<strong>ERROR</strong>: The password field is empty."
+#~ msgstr "<strong>错误</strong>:密码字段是空的。"
+
+#~ msgid "<strong>ERROR</strong>: Invalid email address."
+#~ msgstr "<strong>错误</strong>：请输入正确的邮箱"
+
+#~ msgid "<strong>ERROR</strong>: Invalid username."
+#~ msgstr "<strong>错误</strong>：无效手机号码。"
+
+#~ msgid "<strong>ERROR</strong>: The password you entered is incorrect."
+#~ msgstr "<strong>错误</strong>: 您输入的密码不正确."
+
+#, fuzzy
+#~ msgid "Invalid content_type id."
+#~ msgstr "身份content_type无效。"
+
+#, fuzzy
+#~ msgid "Invalid content type id."
+#~ msgstr "内容类型ID无效。"
+
+#, fuzzy
+#~ msgid "The system was not able to delete the content type."
+#~ msgstr "系统无法删除该内容类型。"
+
+#, fuzzy
+#~ msgid "Invalid content id."
+#~ msgstr "内容ID无效。"
+
+#, fuzzy
+#~ msgid "Content author cannot be null or empty."
+#~ msgstr "内容作者不能是空的。"
+
+#, fuzzy
+#~ msgid "The title and content are null."
+#~ msgstr "标题和内容均为无效。"
+
+#, fuzzy
+#~ msgid "Could not insert content into the content table."
+#~ msgstr "无法将内容插入内容表。"
+
+#, fuzzy
+#~ msgid "Could not update content within the content table."
+#~ msgstr "无法更新内容表中的内容。"
+
+#~ msgid "Unknown"
+#~ msgstr "未知"
+
+#, fuzzy, php-format
+#~ msgid ""
+#~ "Devflow release %s is available for download or upgrade. Before "
+#~ "upgrading, make sure to backup your system."
+#~ msgstr "Devflow发布%s可下载或升级。升级前，务必备份系统。"
+
+#, fuzzy, php-format
+#~ msgid "Reassign content error: %s"
+#~ msgstr "内容重新分配错误：%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is currently in dev mode. Please remember to set your system "
+#~ "to prod mode after testing. When prod mode is set, this warning message "
+#~ "will disappear."
+#~ msgstr ""
+#~ "你的系统目前处于开发模式。请记得测试后将系统设置为生产模式。当生产模式设置"
+#~ "为生产环境时，这个警告信息会消失。"
+
+#~ msgid "Invalid product id."
+#~ msgstr "无效的产品id."
+
+#, fuzzy
+#~ msgid "Product author cannot be null or empty."
+#~ msgstr "产品作者不能是空的或空的。"
+
+#, fuzzy
+#~ msgid "The title and body should not be null."
+#~ msgstr "标题和正文不应为无效。"
+
+#, fuzzy
+#~ msgid "Could not insert product into the product table."
+#~ msgstr "无法将产品插入产品表。"
+
+#, fuzzy
+#~ msgid "Could not update product within the product table."
+#~ msgstr "无法在产品表中更新产品。"
+
+#~ msgid "The ID of this entity is invalid."
+#~ msgstr "此实体的 ID 无效。"
+
+#, fuzzy
+#~ msgid "Site domain cannot be empty."
+#~ msgstr "网站域名不能空。"
+
+#, fuzzy
+#~ msgid "Sorry, that site already exists!"
+#~ msgstr "抱歉，那个网站已经存在了！"
+
+#~ msgid "Sorry, that site domain and path is already used."
+#~ msgstr "很抱歉，该站点域和路径已被使用。"
+
+#~ msgid "Site does not exist."
+#~ msgstr "站点不存在。"
+
+#, fuzzy
+#~ msgid "You are not allowed to delete a super administrator account."
+#~ msgstr "你不能删除超级管理员账户。"
+
+#, fuzzy
+#~ msgid "Site deletion exception occurred."
+#~ msgstr "网站删除例外发生。"
+
+#, fuzzy
+#~ msgid "User delete exception occurred."
+#~ msgstr "发生了用户删除异常。"
+
+#, fuzzy
+#~ msgid "You are not allowed to remove super admins from this site."
+#~ msgstr "你不允许将超级管理员从本网站移除。"
+
+#, fuzzy
+#~ msgid "Invalid user id."
+#~ msgstr "用户ID无效。"
+
+#, fuzzy
+#~ msgid "Cannot create a user with an empty username."
+#~ msgstr "无法创建用户名为空。"
+
+#, fuzzy
+#~ msgid "Username must be at least 3 characters long."
+#~ msgstr "用户名必须至少3个字符。"
+
+#~ msgid "Username may not be longer than 60 characters."
+#~ msgstr "手机号码不能超过11个字符。"
+
+#, fuzzy
+#~ msgid "Sorry, that username cannot be used."
+#~ msgstr "抱歉，这个用户名不能使用。"
+
+#, fuzzy, php-format
+#~ msgid "Sorry, the username <strong>%s</strong> is not allowed."
+#~ msgstr "抱歉，用户名 <strong>%s</strong> 不允许使用。"
+
+#, fuzzy
+#~ msgid "Sorry, that email address cannot be used."
+#~ msgstr "抱歉，那个邮箱地址不能用。"
+
+#, fuzzy
+#~ msgid "Invalid parsecode name: empty name given."
+#~ msgstr "无效解析码名称：空名给出。"
+
+#, fuzzy, php-format
+#~ msgid ""
+#~ "Invalid parsecode name: %s. Do not use spaces or reserved characters: & / "
+#~ "< > [ ]"
+#~ msgstr "无效解析码名称：%s。请勿使用空格或保留字符：& / < > [ ]"
+
+#~ msgid "Component"
+#~ msgstr "组件"
+
+#~ msgid "Accordion"
+#~ msgstr "折叠"
+
+#~ msgid "Number of Items"
+#~ msgstr "项目数量"
+
+#~ msgid "Alert"
+#~ msgstr "警告"
+
+#~ msgid "Context"
+#~ msgstr "上下文"
+
+#~ msgid "Primary"
+#~ msgstr "主要"
+
+#~ msgid "Secondary"
+#~ msgstr "次要"
+
+#~ msgid "Success"
+#~ msgstr "成功"
+
+#~ msgid "Danger"
+#~ msgstr "危险"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid "Info"
+#~ msgstr "信息"
+
+#~ msgid "Light"
+#~ msgstr "浅色"
+
+#~ msgid "Dark"
+#~ msgstr "深色"
+
+#~ msgid "Basic"
+#~ msgstr "基本"
+
+#, fuzzy
+#~ msgid "Button"
+#~ msgstr "按钮"
+
+#~ msgid "Style"
+#~ msgstr "样式"
+
+#~ msgid "Size"
+#~ msgstr "大小"
+
+#~ msgid "Small"
+#~ msgstr "小"
+
+#, fuzzy
+#~ msgid "Large"
+#~ msgstr "大型"
+
+#~ msgid "Type"
+#~ msgstr "类型"
+
+#~ msgid "Submit"
+#~ msgstr "提交"
+
+#, fuzzy
+#~ msgid "Card Heading"
+#~ msgstr "卡片标题"
+
+#, fuzzy
+#~ msgid "Card Text"
+#~ msgstr "卡片文本"
+
+#~ msgid "Card"
+#~ msgstr "卡片"
+
+#~ msgid "Carousel"
+#~ msgstr "轮播"
+
+#~ msgid "Layout"
+#~ msgstr "布局"
+
+#~ msgid "Container"
+#~ msgstr "容器"
+
+#~ msgid "Container Width"
+#~ msgstr "容器宽度"
+
+#~ msgid "Default"
+#~ msgstr "默认"
+
+#~ msgid "Medium"
+#~ msgstr "中"
+
+#~ msgid "Extra Large"
+#~ msgstr "超大"
+
+#~ msgid "Extra Extra Large"
+#~ msgstr "特大"
+
+#~ msgid "Fluid"
+#~ msgstr "流体"
+
+#~ msgid "Content Image"
+#~ msgstr "内容图像"
+
+#~ msgid "Divider"
+#~ msgstr "分隔线"
+
+#~ msgid "Forms"
+#~ msgstr "表单"
+
+#~ msgid "Checkbox"
+#~ msgstr "复选框"
+
+#~ msgid "Label"
+#~ msgstr "标签"
+
+#, fuzzy
+#~ msgid "Checkbox Value"
+#~ msgstr "复选框价值"
+
+#~ msgid "Required?"
+#~ msgstr "必填？"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "形式"
+
+#~ msgid "Form ID"
+#~ msgstr "表格ID"
+
+#~ msgid "Form Action"
+#~ msgstr "表单操作"
+
+#~ msgid "Input"
+#~ msgstr "导入"
+
+#~ msgid "Input Type"
+#~ msgstr "输入类型"
+
+#, fuzzy
+#~ msgid "Email"
+#~ msgstr "电子邮件"
+
+#~ msgid "Hidden"
+#~ msgstr "隐藏"
+
+#~ msgid "Number"
+#~ msgstr "数量"
+
+#~ msgid "Telephone"
+#~ msgstr "电话"
+
+#~ msgid "Field Name"
+#~ msgstr "字段名称"
+
+#~ msgid "Field ID"
+#~ msgstr "字段ID"
+
+#~ msgid "Placeholder"
+#~ msgstr "占位符"
+
+#~ msgid "Textarea"
+#~ msgstr "文本区域"
+
+#~ msgid "Google Maps"
+#~ msgstr "谷歌地图"
+
+#, fuzzy
+#~ msgid "Google Map Embed Url"
+#~ msgstr "谷歌地图嵌入网址"
+
+#~ msgid "Grid"
+#~ msgstr "网格"
+
+#~ msgid "Columns"
+#~ msgstr "列"
+
+#, fuzzy
+#~ msgid "On small displays"
+#~ msgstr "在小型展示中"
+
+#~ msgid "Use default layout"
+#~ msgstr "使用默认布局"
+
+#, fuzzy
+#~ msgid "Columns become rows"
+#~ msgstr "列变为行"
+
+#, fuzzy
+#~ msgid "On tablets"
+#~ msgstr "在平板上"
+
+#, fuzzy
+#~ msgid "Same layout as on small displays"
+#~ msgstr "布局和小型显示器一样"
+
+#~ msgid "On mobile"
+#~ msgstr "在手机上"
+
+#, fuzzy
+#~ msgid "Same layout as on tablets"
+#~ msgstr "布局和平板一样"
+
+#~ msgid "Space between columns"
+#~ msgstr "列之间的空格"
+
+#~ msgid "None"
+#~ msgstr "无"
+
+#~ msgid "Subtle"
+#~ msgstr "细微"
+
+#~ msgid "Reduced"
+#~ msgstr "%s减少到%d"
+
+#~ msgid "Wide"
+#~ msgstr "宽"
+
+#~ msgid "Maximized"
+#~ msgstr "已最大化"
+
+#~ msgid "Number of columns"
+#~ msgstr "列数"
+
+#, fuzzy
+#~ msgid "Order of columns"
+#~ msgstr "列的顺序"
+
+#, fuzzy
+#~ msgid "Columns in standard order"
+#~ msgstr "标准顺序列"
+
+#, fuzzy
+#~ msgid "Columns in reversed order"
+#~ msgstr "倒序列"
+
+#, fuzzy
+#~ msgid "Order on small displays"
+#~ msgstr "小型展示的顺序"
+
+#, fuzzy
+#~ msgid "Use same as above"
+#~ msgstr "用法和上面一样"
+
+#, fuzzy
+#~ msgid "Use same as on small displays"
+#~ msgstr "使用方式和小屏幕一样"
+
+#~ msgid "Order on mobile"
+#~ msgstr "在手机上订购"
+
+#~ msgid "Heading"
+#~ msgstr "标题"
+
+#~ msgid "Display"
+#~ msgstr "显示"
+
+#~ msgid "Display 1"
+#~ msgstr "显示% 1"
+
+#~ msgid "Display 2"
+#~ msgstr "显示2"
+
+#~ msgid "Display 3"
+#~ msgstr "显示3"
+
+#~ msgid "Display 4"
+#~ msgstr "显示4"
+
+#, fuzzy
+#~ msgid "Display 5"
+#~ msgstr "显示5"
+
+#, fuzzy
+#~ msgid "Display 6"
+#~ msgstr "展示6"
+
+#~ msgid "Primary Text"
+#~ msgstr "主要文本"
+
+#~ msgid "Secondary Text"
+#~ msgstr "次要文本"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "图片"
+
+#~ msgid "Lead"
+#~ msgstr "点击"
+
+#~ msgid "Spacer"
+#~ msgstr "间隔"
+
+#~ msgid "Text Editor"
+#~ msgstr "文本编辑器"
+
+#~ msgid "YouTube Video"
+#~ msgstr "YouTube视频"
+
+#, fuzzy
+#~ msgid "Youtube Embed URL"
+#~ msgstr "YouTube 嵌入网址"
+
+#~ msgid "Embed Width"
+#~ msgstr "嵌入宽度"
+
+#~ msgid "Embed Height"
+#~ msgstr "嵌入高度"
+
+#~ msgid "Add New Content Type"
+#~ msgstr "新增内容类型"
+
+#~ msgid "Content Type Name"
+#~ msgstr "内容类型名称"
+
+#, fuzzy
+#~ msgid "Content Type Slug"
+#~ msgstr "内容类型滑头"
+
+#, fuzzy
+#~ msgid "Content Type Description"
+#~ msgstr "内容类型描述"
+
+#~ msgid "Content Type"
+#~ msgstr "内容类型"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "Slug"
+#~ msgstr "别名"
+
+#~ msgid "Count"
+#~ msgstr "计数"
+
+#, fuzzy
+#~ msgid "Action"
+#~ msgstr "行动"
+
+#, fuzzy
+#~ msgid ""
+#~ "Are you sure you want to delete this content type? By deleting this "
+#~ "content type, you also delete all content connected to this content type "
+#~ "as well."
+#~ msgstr ""
+#~ "你确定要删除这种内容类型吗？删除该内容类型后，你也会删除所有与该内容类型相"
+#~ "关的内容。"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "结束"
+
+#, fuzzy
+#~ msgid "If left blank, the system will auto generate the content type slug."
+#~ msgstr "如果留空，系统会自动生成内容类型。"
+
+#~ msgid "Update Content Type"
+#~ msgstr "更新内容类型"
+
+#~ msgid "Update"
+#~ msgstr "更新"
+
+#, fuzzy
+#~ msgid "New"
+#~ msgstr "新"
+
+#~ msgid "Title"
+#~ msgstr "标题"
+
+#~ msgid "Author"
+#~ msgstr "作者"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Last Modified"
+#~ msgstr "最后修改"
+
+#~ msgid "Edit"
+#~ msgstr "编辑"
+
+#, fuzzy
+#~ msgid "Are you sure you want to delete this content?"
+#~ msgstr "你确定要删除这些内容吗？"
+
+#~ msgid "Content"
+#~ msgstr "内容"
+
+#~ msgid "Publish"
+#~ msgstr "发布"
+
+#~ msgid "Publication Date"
+#~ msgstr "发布日期"
+
+#~ msgid "Status"
+#~ msgstr "状态"
+
+#~ msgid "Schedule"
+#~ msgstr "计划"
+
+#~ msgid "Archive"
+#~ msgstr "存档"
+
+#, fuzzy
+#~ msgid "Content Attributes"
+#~ msgstr "内容属性"
+
+#~ msgid "Parent"
+#~ msgstr "父级"
+
+#~ msgid "Sidebar"
+#~ msgstr "侧边栏"
+
+#~ msgid "Show in Menu"
+#~ msgstr "显示在菜单中"
+
+#, fuzzy
+#~ msgid "Show in Search"
+#~ msgstr "搜寻节目"
+
+#~ msgid "Featured Image"
+#~ msgstr "特色图片"
+
+#~ msgid "Set featured image"
+#~ msgstr "设置特色图片"
+
+#~ msgid "Remove featured image"
+#~ msgstr "移除特色图片"
+
+#, php-format
+#~ msgid "If left blank, the system will auto generate the %s slug."
+#~ msgstr "如果留空，系统将自动生成 %s slug。"
+
+#~ msgid "All Content"
+#~ msgstr "所有内容"
+
+#~ msgid "Pages"
+#~ msgstr "页面"
+
+#~ msgid "Are you sure you want to delete this page?"
+#~ msgstr "您确定要删除此页吗？"
+
+#~ msgid "Languages"
+#~ msgstr "语言"
+
+#, fuzzy
+#~ msgid "Use Ctrl/Cmd to select multiple."
+#~ msgstr "用Ctrl/Cmd选择多个。"
+
+#~ msgid "Page"
+#~ msgstr "页面"
+
+#~ msgid "URI"
+#~ msgstr "网址"
+
+#, fuzzy
+#~ msgid "Note: add the uri without a trailing slash."
+#~ msgstr "注意：添加uri时不要带斜线。"
+
+#~ msgid "Name"
+#~ msgstr "名称"
+
+#~ msgid "Version"
+#~ msgstr "版本"
+
+#~ msgid "Developer:"
+#~ msgstr "开发者："
+
+#~ msgid "View Details"
+#~ msgstr "查看详情"
+
+#, fuzzy
+#~ msgid "Purchase Url"
+#~ msgstr "购买链接"
+
+#~ msgid "Product Attributes"
+#~ msgstr "产品属性"
+
+#~ msgid "Sku"
+#~ msgstr "SKU"
+
+#~ msgid "Price"
+#~ msgstr "价格"
+
+#~ msgid "Currency"
+#~ msgstr "货币"
+
+#, fuzzy
+#~ msgid "The purchase url is where customers can purchase your product."
+#~ msgstr "购买网址是客户可以购买你产品的渠道。"
+
+#~ msgid "All Products"
+#~ msgstr "所有产品"
+
+#~ msgid "New Product"
+#~ msgstr "新产品"
+
+#, fuzzy
+#~ msgid "Are you sure you want to delete this product?"
+#~ msgstr "你确定要删除这个产品吗？"
+
+#~ msgid "Product"
+#~ msgstr "产品"
+
+#~ msgid "Product Slug"
+#~ msgstr "产品 Slug"
+
+#, fuzzy
+#~ msgid "If left blank, the system will auto generate the Product slug."
+#~ msgstr "如果留空，系统会自动生成产品蛞蝓。"
+
+#~ msgid "Subdomain"
+#~ msgstr "子域名"
+
+#~ msgid "Site Name"
+#~ msgstr "站点名称"
+
+#~ msgid "Path"
+#~ msgstr "路径"
+
+#~ msgid "Administrator"
+#~ msgstr "管理员"
+
+#, fuzzy
+#~ msgid "Admin"
+#~ msgstr "行政"
+
+#~ msgid "Are you sure you want to delete this site and all it's content"
+#~ msgstr "是否确实要删除此网站及其所有内容"
+
+#, fuzzy
+#~ msgid "Site Path"
+#~ msgstr "遗址路径"
+
+#, fuzzy
+#~ msgid ""
+#~ "Based on your setup and where you installed the CMS, the system will "
+#~ "figure out the correct path."
+#~ msgstr "根据你的设置和安装CMS的位置，系统会确定正确的路径。"
+
+#, fuzzy
+#~ msgid "Multisite Users"
+#~ msgstr "多站点用户"
+
+#~ msgid "First Name"
+#~ msgstr "名字"
+
+#, fuzzy
+#~ msgid "Last Name"
+#~ msgstr "姓氏"
+
+#, fuzzy
+#~ msgid "Add to Site"
+#~ msgstr "添加到网站"
+
+#, fuzzy
+#~ msgid "What site you want to add this user to?"
+#~ msgstr "你想把这个用户添加到哪个网站？"
+
+#, fuzzy
+#~ msgid "Site"
+#~ msgstr "遗址"
+
+#~ msgid "Role"
+#~ msgstr "角色"
+
+#~ msgid "Assign"
+#~ msgstr "分配"
+
+#, fuzzy
+#~ msgid "Are you sure you want to delete this user and all their content?"
+#~ msgstr "你确定要删除这个用户和他们所有的内容吗？"
+
+#~ msgid ""
+#~ "Would you like to assign this user's site(s) to a different user? Choose "
+#~ "below."
+#~ msgstr "您是否要将此用户的网站分配给其他用户？选择以下。"
+
+#~ msgid "Are you sure you want to permanently delete this user?"
+#~ msgstr "是否确实要永久删除此用户？"
+
+#~ msgid "Update Site"
+#~ msgstr "更新站点"
+
+#~ msgid "Site Domain"
+#~ msgstr "站点域名："
+
+#, fuzzy
+#~ msgid "Site Mapping"
+#~ msgstr "遗址测绘"
+
+#~ msgid "Public"
+#~ msgstr "公开"
+
+#, fuzzy
+#~ msgid "Screenshot"
+#~ msgstr "截图"
+
+#~ msgid "New User?"
+#~ msgstr "新用户?"
+
+#~ msgid "Contact info"
+#~ msgstr "联系信息"
+
+#, fuzzy
+#~ msgid "Email / Password"
+#~ msgstr "邮箱 / 密码"
+
+#~ msgid "Send Email"
+#~ msgstr "发送邮件"
+
+#~ msgid "Send username & password to the user."
+#~ msgstr "向用户发送用户名和密码。"
+
+#~ msgid "Show Password"
+#~ msgstr "显示密码"
+
+#~ msgid "Hide Password"
+#~ msgstr "隐藏密码"
+
+#~ msgid "User Status"
+#~ msgstr "用户状态"
+
+#, fuzzy
+#~ msgid ""
+#~ "If the account is Inactive, the user will be incapable of logging in."
+#~ msgstr "如果账户处于非活跃状态，用户将无法登录。"
+
+#~ msgid "User Role"
+#~ msgstr "用户角色"
+
+#~ msgid "New User"
+#~ msgstr "新用户"
+
+#~ msgid "Reset Password"
+#~ msgstr "重置密码"
+
+#~ msgid "Switch to"
+#~ msgstr "切换到"
+
+#~ msgid "Are you sure you want to remove the user from this site?"
+#~ msgstr "是否确实要从此站点中删除用户？"
+
+#, fuzzy
+#~ msgid ""
+#~ "Would you like to assign this user's content to a different user? Choose "
+#~ "below."
+#~ msgstr "您想将该用户的内容分配给其他用户吗？请选择下方。"
+
+#~ msgid "Profile"
+#~ msgstr "个人资料"
+
+#~ msgid "Layout Options"
+#~ msgstr "布局选项"
+
+#~ msgid "Fixed Layout"
+#~ msgstr "固定布局"
+
+#~ msgid "Toggle Sidebar"
+#~ msgstr "切换侧边栏"
+
+#, fuzzy
+#~ msgid "Admin Skin"
+#~ msgstr "管理员皮肤"
+
+#, fuzzy
+#~ msgid "Change username"
+#~ msgstr "更改用户名"
+
+#~ msgid "About yourself"
+#~ msgstr "个人说明"
+
+#~ msgid "Biography"
+#~ msgstr "简介"
+
+#~ msgid "Profile Picture"
+#~ msgstr "资料图片"
+
+#, php-format
+#~ msgid "You can change your profile picture on <a href=\"%s\">Gravatar</a>."
+#~ msgstr "您可以在<a href=\"%s\">Gravatar</a>修改您的个人资料图片。"
+
+#~ msgid "Date/Time"
+#~ msgstr "日期/时间"
+
+#~ msgid "Timezone"
+#~ msgstr "时区"
+
+#~ msgid "Date Format"
+#~ msgstr "日期格式"
+
+#~ msgid "Time Format"
+#~ msgstr "时间格式"
+
+#~ msgid "Locale"
+#~ msgstr "本地化"
+
+#~ msgid "Language"
+#~ msgstr "语言"
+
+#~ msgid "Update User"
+#~ msgstr "更新用户"
+
+#~ msgid "About the user"
+#~ msgstr "关于用户"
+
+#, fuzzy
+#~ msgid ""
+#~ "If the account is Inactive, the user will be incapable of logging into "
+#~ "the system."
+#~ msgstr "如果账户处于非活跃状态，用户将无法登录系统。"
+
+#~ msgid "Username is invalid."
+#~ msgstr "用户名无效"
+
+#~ msgid "Forgot Password?"
+#~ msgstr "忘记密码？"
+
+#~ msgid "Password is required."
+#~ msgstr "密码是必需的。"
+
+#~ msgid "Remember Me"
+#~ msgstr "记住我"
+
+#, fuzzy
+#~ msgid "Log-in"
+#~ msgstr "登录"
+
+#~ msgid "Email is invalid."
+#~ msgstr "邮箱无效。"
+
+#, fuzzy
+#~ msgid "By clicking \"Reset\" the system will email you a new password."
+#~ msgstr "点击“重置”后，系统会通过电子邮件发送新密码给你。"
+
+#~ msgid "Reset"
+#~ msgstr "重置"
+
+#, fuzzy
+#~ msgid "Devflow"
+#~ msgstr "Devflow"
+
+#~ msgid "Site Description"
+#~ msgstr "网站描述"
+
+#~ msgid "Admin Email"
+#~ msgstr "管理员电子邮件"
+
+#~ msgid "Cookie Expire"
+#~ msgstr "饼干过期"
+
+#~ msgid "Cookie Path"
+#~ msgstr "Cookie路径"
+
+#~ msgid "System Timezone"
+#~ msgstr "系统时区"
+
+#~ msgid "API Key"
+#~ msgstr "API密钥"
+
+#~ msgid "Dashboard"
+#~ msgstr "仪表盘"
+
+#~ msgid "Control panel"
+#~ msgstr "控制"
+
+#~ msgid "Home"
+#~ msgstr "首页"
+
+#~ msgid "Toggle navigation"
+#~ msgstr "切换导航"
+
+#~ msgid "Member since"
+#~ msgstr "成员自"
+
+#~ msgid "Switch back"
+#~ msgstr "切换回经典Divi 生成器"
+
+#~ msgid "Logout"
+#~ msgstr "注销"
+
+#~ msgid "Online"
+#~ msgstr "在线"
+
+#, fuzzy
+#~ msgid "MAIN NAVIGATION"
+#~ msgstr "主导航"
+
+#~ msgid "System Report"
+#~ msgstr "系统报告"
+
+#~ msgid "Flush Cache"
+#~ msgstr "刷新缓存"
+
+#~ msgid "Manage"
+#~ msgstr "管理"
+
+#~ msgid "All"
+#~ msgstr "所有"
+
+#, fuzzy
+#~ msgid "Vihzhuo"
+#~ msgstr "维卓"
+
+#~ msgid "All Users"
+#~ msgstr "所有用户"
+
+#~ msgid "Your Profile"
+#~ msgstr "你的个人资料"
+
+#~ msgid "Options"
+#~ msgstr "选项"
+
+#~ msgid "General"
+#~ msgstr "常规"
+
+#~ msgid "Reading"
+#~ msgstr "阅读"
+
+#, fuzzy
+#~ msgid "Login expires in "
+#~ msgstr "登录过期"
+
+#~ msgid "Powered by"
+#~ msgstr "技术支持"
+
+#~ msgid "Charset"
+#~ msgstr "字符集"
+
+#, fuzzy
+#~ msgid "Content per Page"
+#~ msgstr "每页内容"
