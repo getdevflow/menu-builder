@@ -4,7 +4,7 @@ A full navigation/menu builder for Devflow CMF.
 
 > __Requires__ Devflow Version: 2.x
 
-> __Tested Up To:__ 2.0.0
+> __Tested Up To:__ 2.2.1
 
 > __Requires PHP:__ 8.4+
 
@@ -29,10 +29,10 @@ A full navigation/menu builder for Devflow CMF.
 - Database-backed storage.
 - Renderer API for frontend templates.
 
-## Composer Installation
+## Codex Installation
 
 1. Start a new shell session.
-2. Navigate to the root of your install, run the following command ```composer require getdevflow/menu-builder```.
+2. Navigate to the root of your install, run the following command ```php codex plugin:install getdevflow/menu-builder```.
 
 ## Frontend usage
 
